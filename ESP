@@ -2,6 +2,7 @@
 local ESP = {
     Enabled = false,
     HealthBar = true,
+    Skeletons = true,
     Boxes = true,
     BoxShift = CFrame.new(0,-1.5,0),
 	BoxSize = Vector3.new(4,6,0),
@@ -198,13 +199,13 @@ function boxBase:Update()
         Torso = cf * ESP.BoxShift
     }
 ------------------------------------------------------------------------------------------------------------------------------------------------------    
-    if ESP.HealthBar then
+    if ESP.Skeletons then
     local camera = workspace.CurrentCamera
 local entities = game:GetService("Players")
 local localplayer = entities.LocalPlayer 
 local runservice = game:GetService("RunService")
 
-local esp_settings = {
+local ESP.Skeletons = {
     enabled = true,
     skel = true,
     skel_col = Color3.fromRGB(255,255,255)
