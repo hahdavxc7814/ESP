@@ -1,8 +1,6 @@
 --Settings--
 local ESP = {
     Enabled = false,
-    HealthBar = true,
-    Skeletons = true,
     Boxes = true,
     BoxShift = CFrame.new(0,-1.5,0),
 	BoxSize = Vector3.new(4,6,0),
@@ -198,9 +196,7 @@ function boxBase:Update()
         TagPos = cf * ESP.BoxShift * CFrame.new(0,size.Y/2,0),
         Torso = cf * ESP.BoxShift
     }
-------------------------------------------------------------------------------------------------------------------------------------------------------    
-
-------------------------------------------------------------------------------------------------------------------------------------------------------
+    
     if ESP.Boxes then
         local TopLeft, Vis1 = WorldToViewportPoint(cam, locs.TopLeft.p)
         local TopRight, Vis2 = WorldToViewportPoint(cam, locs.TopRight.p)
