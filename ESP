@@ -1,10 +1,11 @@
 --Settings--
 local ESP = {
     Enabled = false,
+    HealthBar = true,
     Boxes = true,
     BoxShift = CFrame.new(0,-1.5,0),
 	BoxSize = Vector3.new(4,6,0),
-    Color = Color3.fromRGB(242, 19, 19),
+    Color = Color3.fromRGB(242, 243, 243),
     FaceCamera = false,
     Names = true,
     TeamColor = true,
